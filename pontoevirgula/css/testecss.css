@@ -1,0 +1,285 @@
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 0.5; } 
+}
+
+@-webkit-keyframes Escurecer {
+	0%{ opacity: 0;}
+	100% {opacity: 0.2}
+}
+
+a:link {
+text-decoration:none;
+}
+a:visited {
+text-decoration:none;
+}
+a:hover {
+text-decoration:none;
+}
+
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background-size: 50vw;
+	background-image: url("../fotos/LogoPVof.jpg");
+}
+
+.fundo{
+	position: fixed;
+	width: 100vw;
+	height: 100vw;
+	background-color: black;
+	opacity: 0.2;
+	z-index: -2;
+	-webkit-animation: Escurecer 0.5s ease-in-out;
+}
+
+.faixa, .fadeIn{
+	-webkit-animation: fadeIn 0.5s ease-in-out;
+	
+	
+}
+
+.faixa{
+	position: fixed;
+	left: 32.5vw;
+	width: 35vw;
+	height: 100vw;
+	background-color: white;
+	opacity: 0.5;
+	z-index: -1;
+	box-shadow: 0px 0px 100px -10px white;
+}
+.faixaN{
+	position: fixed;
+	left: 32.5vw;
+	width: 35vw;
+	height: 18vw;
+	top:15vw;
+	background-color: white;
+	opacity: 0.5;
+	z-index: -1;
+	border-radius:2vw;
+	box-shadow: 0px 0px 100px -10px white;
+}
+.caixacentro{
+	position: absolute;
+	left: 30vw;
+	width: 40vw;
+	height: 50vw;
+	top: 13vw;
+	background-color: white;
+	opacity: 0.6;
+	z-index: -1;
+	border-radius: 2vw;
+	box-shadow: 0px 0px 100px -10px white
+
+}
+
+.campo{
+	width: 15vw;
+	height: 2vw;
+	border-radius: 1vw;
+	border: 0;
+}
+
+td{
+	height: 3vw;
+}
+
+.botao_enviar{
+	width: 8vw;
+	height: 3vw;
+	color: white;
+	background-color: green;
+	font-family: "Courier New", cursive, sans-serif;
+	border: 0;
+	border-radius: 3vw;
+}
+
+input:focus{
+	border: none;
+	outline-color: purple;
+}
+
+/*Página Principal - Home*/
+
+.cabecalho{
+	position: absolute;
+	width: 100vw;
+	height: 7vw;
+	top:-1;
+	background-color: white;
+	opacity: 0.8;
+	z-index: -1;
+	box-shadow: 0px 0px 100px -10px white;
+}
+
+.menu{
+	position: absolute;
+	width: 32vw;
+	height: 3vw;
+	background-color: #1E90FF;
+	opacity: 0.8;
+	z-index: -1;
+	left: 61vw; 
+	top: 7.1vw;
+	border-bottom-left-radius: 1vw;
+	border-bottom-right-radius: 1vw;
+}
+.pos_menu{
+	position: absolute;
+	left:63vw;
+	top: 7.2vw;
+}
+
+.menuN{
+	position: absolute;
+	width: 15vw;
+	height: 3vw;
+	background-color: #1E90FF;
+	opacity: 0.8;
+	z-index: -1;
+	left: 76vw; 
+	top: 7.1vw;
+	border-bottom-left-radius: 1vw;
+	border-bottom-right-radius: 1vw;
+}
+.pos_menuN{
+	position: absolute;
+	left:77vw;
+	top: 7.2vw;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    float: left;
+}
+
+ FONT.sla {
+	position: absolute; 
+} 
+
+
+li a {
+    display: block;
+    color: white;
+    padding: 0.55vw 0.32vw;
+    text-decoration: none;
+    width: 6.8vw; 
+    -webkit-user-select: none;
+    font-size: 1.5vw;
+
+}
+    
+li a:hover:not(.active) {
+    text-shadow: 0vw 0vw 1vw white;
+ }
+
+li a, li a:hover{ /*Efeito quando passa o mouse em cima*/
+	-webkit-transform: 1;
+    -moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+
+	transition: all 0.5s ease;
+}
+    
+.active {
+    text-shadow: 0vw 0vw 1vw white;
+}
+
+.lateral{
+	position: absolute;
+	top: 7vw;
+	width: 15vw;
+	height: 80vw;
+	background-color:  #191970;
+	opacity: 1;
+	z-index: -1;
+	box-shadow: 0px 0px 100px -10px  #191970;
+}
+
+.cont_lateral{
+	position: absolute;
+	top: 7vw;
+	width: 15vw;
+	height: 73vw;
+	background-color:  #191970;
+	opacity: 1; 
+    z-index: -1;
+	box-shadow: 0px 0px 100px -10px  #191970; 
+}
+
+img{
+	width: 10vw;
+	height: 10vw;
+	border-radius: 100vw;
+}
+
+
+
+.botao_a{
+	width: 30vw;
+	height: 5vw;
+	font-family: "Courier New", cursive, sans-serif;
+	font-size: 1.5vw;
+	background-color: white;
+	border: 0;
+	opacity: 0.8;
+	border-radius: 3vw;
+	box-shadow: 0px 0px 100px -10px white;
+	left:1000px;
+}
+.blockquote_a{
+	width: 58vw;
+	height: 30vw;
+	font-family: "Courier New", cursive, sans-serif;
+	font-size: 1.5vw;
+	background-color: white;
+	border: 0;
+	opacity: 0.8;
+	border-radius: 3vw;
+	box-shadow: 0px 0px 100px -10px white;
+}
+
+.botao_l{
+	width: 5vw;
+	height: 5vw;
+	font-family: "Courier New", cursive, sans-serif;
+	font-size: 1.5vw;
+	background-color: white;
+	border: 0;
+	opacity: 0.8;
+	border-radius: 3vw;
+	box-shadow: 0px 0px 100px -10px white;
+	left:1000px;
+	
+}
+.botoeslugar{
+	top: 7vw;
+}
+
+.rod{
+	width: 100vw;
+	height: 13vw;
+	top: 200vw;
+	font-family: "Courier New", cursive, sans-serif;
+	font-size: 1.5vw;
+	background-color: #E6E6FA;
+	border: 0;
+	opacity: 1;
+	border-radius: 0vw;
+	box-shadow: 0px 0px 10px -10px white;
+}
